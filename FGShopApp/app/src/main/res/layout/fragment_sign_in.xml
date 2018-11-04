@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/layoutMainSignIn"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/inputEmail"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorTextAppearance="@style/MyAppTheme.TextInputLayout">
+        <it.hueic.kenhoang.fgshopapp.custom.EmailEditTextCustom
+            android:id="@+id/edEmail"
+            android:hint="Email adress"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/inputPass"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorTextAppearance="@style/MyAppTheme.TextInputLayout">
+        <it.hueic.kenhoang.fgshopapp.custom.PasswordEditTextCustom
+            android:id="@+id/edPassword"
+            android:hint="Password"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:useStrike="true"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/forgotPass"
+        android:text="Forgot password?"
+        android:textColor="@android:color/black"
+        android:gravity="right"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_margin="10dp"
+        android:text="Sign In"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        fontPath="fonts/Arkhip_font.ttf"/>
+
+    <TextView
+        android:text="Or sign in with"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnFacebook"
+            android:text="Facebook"
+            android:textColor="@color/colorFacebook"
+            android:background="@drawable/border_facebook_login"
+            android:drawableLeft="@drawable/facebookiconsmall"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/facebookiconsmall" />
+        <Button
+            android:id="@+id/btnGoogle"
+            android:text="Google"
+            android:textColor="@color/colorGoogle"
+            android:background="@drawable/border_google_login"
+            android:drawableLeft="@drawable/googleplussmall"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/googleplussmall" />
+    </LinearLayout>
+</LinearLayout>

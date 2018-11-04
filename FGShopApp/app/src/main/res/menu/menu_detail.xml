@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_rating"
+        android:title="Rate"
+        android:icon="@drawable/ic_star_black_24dp"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_cart"
+        android:title="Cart"
+        android:icon="@drawable/ic_shopping_cart_white_24dp"
+        app:showAsAction="always"
+        app:actionLayout="@layout/item_cart_custom"
+        />
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:iconTint="@android:color/white"
+        android:title="Search"
+        app:showAsAction="always"
+        />
+</menu>

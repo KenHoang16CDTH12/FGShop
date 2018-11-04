@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00a9f4</color>
+    <color name="colorPrimaryDark">#1c92dc</color>
+    <color name="colorAccent">#e53835</color>
+    <color name="colorGray">#CCC</color>
+    <color name="colorRed">#FFFF4444</color>
+
+    <color name="background_color_blue">#00a9f4</color>
+    <color name="background_color_grey">#222233</color>
+    <color name="text_color">#fefefe</color>
+
+    <color name="overlayBackground">#7f333639</color>
+    <color name="overlayActionBar">#0e0d0e</color>
+    <color name="overGrey">#d6d5d7</color>
+    <!--Button Color-->
+    <color name="btnLogin">#e53835</color>
+    <color name="colorFacebook">#4a6ea9</color>
+    <color name="colorGoogle">#da4835</color>
+    <!--Rating Dialog color-->
+    <color name="starColor">#e53835</color>
+    <color name="noteDescriptionTextColor">#e53835</color>
+    <color name="titleTextColor">#000000</color>
+    <color name="descriptionTextColor">#222233</color>
+    <color name="commentTextColor">#000000</color>
+    <color name="hintTextColor">#55000000</color>
+
+</resources>

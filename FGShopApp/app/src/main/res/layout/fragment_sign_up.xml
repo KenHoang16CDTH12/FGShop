@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:id="@+id/signUpLayoutMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:ignore="MissingPrefix"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Please fill information"
+            android:textColor="@android:color/black"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputFullname"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/MyAppTheme.TextInputLayout"
+            >
+            <EditText
+                android:id="@+id/edFullName"
+                android:hint="Fullname"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputEmail"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/MyAppTheme.TextInputLayout" >
+            <it.hueic.kenhoang.fgshopapp.custom.EmailEditTextCustom
+                android:id="@+id/edEmailAdress"
+                android:hint="Email address"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputPass"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/MyAppTheme.TextInputLayout" >
+            <it.hueic.kenhoang.fgshopapp.custom.PasswordEditTextCustom
+                android:id="@+id/edPassword"
+                android:hint="Password"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:useStrike="true"
+                app:useValidate="true"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:text="Passwords include 6 characters and a capital letter"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputRePass"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/MyAppTheme.TextInputLayout">
+            <it.hueic.kenhoang.fgshopapp.custom.PasswordEditTextCustom
+                android:id="@+id/edRepeatPassword"
+                android:hint="Re-Password"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:useStrike="true"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_margin="10dp"
+            android:text="Sign Up"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fontPath="fonts/Arkhip_font.ttf"/>
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_margin="10dp"
+            android:text="We have understood the security issues of FGShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:text="Or sign in with"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnFacebook"
+                android:text="Facebook"
+                android:textColor="@color/colorFacebook"
+                android:background="@drawable/border_facebook_login"
+                android:drawableLeft="@drawable/facebookiconsmall"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/facebookiconsmall" />
+            <Button
+                android:id="@+id/btnGoogle"
+                android:text="Google"
+                android:textColor="@color/colorGoogle"
+                android:background="@drawable/border_google_login"
+                android:drawableLeft="@drawable/googleplussmall"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/googleplussmall" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

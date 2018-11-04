@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/checkout_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:ignore="MissingPrefix">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:theme="@style/menuItemColor"/>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Please fill information"
+                android:textColor="@android:color/black"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputPhone"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <EditText
+                    android:id="@+id/edPhone"
+                    android:hint="Phone"
+                    android:textColor="@android:color/black"
+                    android:inputType="phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputAddress"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <EditText
+                    android:id="@+id/edAddress"
+                    android:hint="Address"
+                    android:textColor="@android:color/black"
+                    android:inputType="phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+         <!--   <TextView
+                android:text="Delivery method: "
+                android:textColor="@android:color/black"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radShipToAddress"
+                    android:text="Ship to this address"
+                    android:buttonTint="@color/colorAccent"
+                    android:textColor="@android:color/black"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radHomeAddress"
+                    android:text="Home address"
+                    android:buttonTint="@color/colorAccent"
+                    android:textColor="@android:color/black"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:text="Payment method: "
+                android:textColor="@android:color/black"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radCOD"
+                    android:text="Cash On Delivery"
+                    android:buttonTint="@color/colorAccent"
+                    android:textColor="@android:color/black"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radYourWallet"
+                    android:text="Your wallet"
+                    android:buttonTint="@color/colorAccent"
+                    android:textColor="@android:color/black"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radPaypal"
+                    android:text="Paypal"
+                    android:buttonTint="@color/colorAccent"
+                    android:textColor="@android:color/black"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+-->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputDesc"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <EditText
+                    android:id="@+id/edDesc"
+                    android:hint="Description"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnCheckout"
+                android:layout_margin="10dp"
+                android:text="Checkout"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                fontPath="fonts/Arkhip_font.ttf"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

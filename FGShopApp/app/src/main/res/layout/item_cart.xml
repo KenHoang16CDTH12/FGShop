@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp">
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_margin="8dp"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:src="@drawable/ic_delete_sweep_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/delete_icon"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/view_foreground"
+        android:background="@android:color/white"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp">
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/img"
+                android:src="@drawable/image_null"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical|start"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:text="Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/price"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:gravity="center_vertical|start"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textStyle="italic"
+                android:text="100,000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/btnQuantity"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            app:textSize="8sp"
+            app:backGroundColor="@color/colorAccent"
+            app:initialNumber="1"
+            app:finalNumber="20"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/ic_shopping_cart_white_24dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvCount"
+        android:background="@drawable/bg_circle_custom"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:text="1"
+        android:textStyle="bold"
+        android:layout_gravity="right"
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>
