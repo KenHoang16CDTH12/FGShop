@@ -1,0 +1,370 @@
+@media (min-width: 992px){
+    .typo-line{
+        padding-left: 140px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .typo-line .category{
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0px;
+        position: absolute;
+    }
+}
+
+@font-face {
+  font-family: 'Arkhip';
+  src: url('../../assets/fonts/Arkhip_font.ttf');
+}
+
+@font-face {
+  font-family: 'Nabila';
+  src: url('../../assets/fonts/NABILA.TTF');
+}
+
+@font-face {
+  font-family: 'Font6';
+  src: url('../../assets/fonts/font6.ttf');
+}
+
+@font-face {
+  font-family: 'Font7';
+  src: url('../../assets/fonts/font7.ttf');
+}
+
+@font-face {
+  font-family: 'Font8';
+  src: url('../../assets/fonts/font8.ttf');
+}
+
+
+body {
+
+}
+
+#logo, #page_name, #p2 {
+  font-family: 'Arkhip', sans-serif;
+}
+
+.numbers {
+  font-family: 'Arkhip', sans-serif;
+}
+
+.stats {
+  font-family: 'Arkhip', sans-serif;
+  font-size: 90%;
+}
+
+.numbers p {
+  font-family: 'Font7', sans-serif;
+  font-size: 50%;
+}
+
+.title {
+  font-family: 'Arkhip', sans-serif;
+}
+
+.category {
+  font-family: 'Font8', sans-serif;
+}
+
+thead {
+  font-family: 'Font6', sans-serif;
+}
+
+td {
+}
+.icon-section {
+	margin: 0 0 3em;
+	clear: both;
+	overflow: hidden;
+}
+.icon-container {
+	width: 240px;
+	padding: .7em 0;
+	float: left;
+	position: relative;
+	text-align: left;
+}
+.icon-container [class^="ti-"],
+.icon-container [class*=" ti-"] {
+	color: #000;
+	position: absolute;
+	margin-top: 3px;
+	transition: .3s;
+}
+.icon-container:hover [class^="ti-"],
+.icon-container:hover [class*=" ti-"] {
+	font-size: 2.2em;
+	margin-top: -5px;
+}
+.icon-container:hover .icon-name {
+	color: #000;
+}
+.icon-name {
+	color: #aaa;
+	margin-left: 35px;
+	font-size: .8em;
+	transition: .3s;
+}
+.icon-container:hover .icon-name {
+	margin-left: 45px;
+}
+
+.places-buttons .btn{
+    margin-bottom: 30px
+}
+.sidebar .nav > li.active-pro{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+.sidebar .nav > li.active-pro a{
+    background: rgba(255, 255, 255, 0.14);
+    opacity: 1;
+    color: #FFFFFF;
+}
+
+.table-upgrade td:nth-child(2),
+.table-upgrade td:nth-child(3){
+    text-align: center;
+}
+
+#table_null {
+  text-align: center;
+  font-size: 1em;
+}
+
+.pagination {
+    text-align: center;
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+#btn_add {
+    background-color: #4CAF50;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    padding: 10px;
+    color: white;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Arkhip', sans-serif;
+}
+
+#btn_add:hover {
+    background-color: #f39c12;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#status_order {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px;
+}
+
+/* -------------------- Select Box Styles: bavotasan.com Method (with special adaptations by ericrasch.com) */
+/* -------------------- Source: http://bavotasan.com/2011/style-select-box-using-only-css/ */
+.styled-select {
+   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+   height: 29px;
+   overflow: hidden;
+   width: 240px;
+}
+
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+}
+
+.styled-select.slate {
+   background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+   height: 34px;
+   width: 240px;
+}
+
+.styled-select.slate select {
+   border: 1px solid #ccc;
+   font-size: 16px;
+   height: 34px;
+   width: 268px;
+}
+
+/* -------------------- Rounded Corners */
+.rounded {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+}
+
+.semi-square {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+
+/* -------------------- Colors: Background */
+.slate   { background-color: #ddd; }
+.green   { background-color: #4CAF50; }
+.blue    { background-color: #3b8ec2; }
+.yellow  { background-color: #eec111; }
+.black   { background-color: #000; }
+
+/* -------------------- Colors: Text */
+.slate select   { color: #000; }
+.green select   { color: #fff; }
+.blue select    { color: #fff; }
+.yellow select  { color: #000; }
+.black select   { color: #fff; }
+
+/* -------------------- Select Box Styles: stackoverflow.com Method */
+/* -------------------- Source: http://stackoverflow.com/a/5809186 */
+select#soflow, select#soflow-color {
+   -webkit-appearance: button;
+   -webkit-border-radius: 2px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color: #555;
+   font-size: inherit;
+   margin: 20px;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 300px;
+}
+
+select#soflow-color {
+   color: #fff;
+   background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#779126, #779126 40%, #779126);
+   background-color: #779126;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   padding-left: 15px;
+}
+
+.hr2 {
+  border: none;
+  border-top: medium double grey;
+  color: grey;
+  overflow: visible;
+  text-align: center;
+}
+
+.hr2:after {
+  background: white;
+  content: "\0025C6";
+  display: inline-block;
+  font-size: 1.7em;
+  position: relative;
+  top: -.75em;
+}
+
+#header {
+  margin-bottom: 5%;
+}
+
+/*Seach bar*/
+.search {
+  background: #f2f2f2;
+}
+
+.searchTerm {
+  position: absolute;
+  left: 20%;
+  width: 75%;
+  border: 3px solid #4CAF50;
+  padding: 5px;
+  outline: none;
+  color: #4CAF50;
+  text-align: justify;
+}
+
+.searchTerm:focus{
+  color: #4CAF50;
+}
+
+.searchSelector {
+  position: absolute;
+  left: 0;
+  width: 20%;
+  height: 36px;
+  border: 0px solid #4CAF50;
+  background: #4CAF50;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+
+.searchButton {
+  position: absolute;
+  right: 0;
+  width: 5%;
+  height: 36px;
+  border: 1px solid #4CAF50;
+  background: #4CAF50;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.searchButton:hover {
+    background-color: #f39c12;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  margin-top: 10px;
+  width: 100%;
+}
+
+select {
+  text-align: center;
+  text-align-last: center;
+}
+
+
+
