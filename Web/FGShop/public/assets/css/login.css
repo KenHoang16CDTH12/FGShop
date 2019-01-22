@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'Arkhip';
+  src: url('../../assets/fonts/Arkhip_font.ttf');
+}
+
+@font-face {
+  font-family: 'Nabila';
+  src: url('../../assets/fonts/NABILA.TTF');
+}
+
+@font-face {
+  font-family: 'Font6';
+  src: url('../../assets/fonts/font6.ttf');
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  text-align: center;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.wrapper {
+  background-image: url("../../assets/img/background_template_1.jpg");
+  background-size: 100%;
+  min-width: 950px;
+  width: 100%;
+  height: 100%;
+}
+
+.login_box {
+  background-color: #ffffff;
+  border: 1px solid #EDEDED;
+  border-radius: 7px;
+  font-family: 'Font6', sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 0.90;
+  position: relative;
+  padding: 5px;
+  top: 7%;
+  width: 35%;
+}
+
+.login_header {
+  background-color: #3692CA;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  color: #fff;
+  font-family: 'Font6', sans-serif;
+  height: 90px;
+  width: 100%;
+  text-align: center;
+}
+
+.login_header h1 {
+  color: #2C6C96;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 250%;
+}
+
+.login_header p {
+  font-family: 'Arkhip', sans-serif;
+  margin-top: 10px;
+  color: white;
+  margin-bottom: 0;
+  font-size: 120%;
+}
+
+input[type="submit"] {
+  background-color: #3498db;
+  border: 1px solid #3498db;
+  border-radius: 3px;
+  color: #fff;
+  font-family: 'Font6', sans-serif;
+  font-size: 120%;
+  margin: 5px 0px 10px 0px;
+  padding: 5px;
+  width: 80%;
+  height: 35px;
+  text-shadow: #73B6E2 0.5px 0.5px 0;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  border: 1px solid #e5e5e5;
+  font-family: 'Font6';
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80%;
+  height: 35px;
+  padding: 5px;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+  border-color: #3498db;
+}
+
+p {
+  font-family: 'Font6', sans-serif;
+  color: red;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 100%;
+}
+
+.second {
+  background-color: #d3cfce;
+  display: none;
+}
+.first {
+  background-color: #d3cfce;
+}
