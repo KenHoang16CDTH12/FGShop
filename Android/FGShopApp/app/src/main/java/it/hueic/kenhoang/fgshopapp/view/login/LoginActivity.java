@@ -2,11 +2,11 @@ package it.hueic.kenhoang.fgshopapp.view.login;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.tabs.TabLayout;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 
 import com.facebook.FacebookSdk;
@@ -14,7 +14,6 @@ import com.facebook.appevents.AppEventsLogger;
 
 import it.hueic.kenhoang.fgshopapp.R;
 import it.hueic.kenhoang.fgshopapp.adapter.ViewPagerAdapterLogin;
-import it.hueic.kenhoang.fgshopapp.utils.Utils;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 

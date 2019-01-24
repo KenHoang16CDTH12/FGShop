@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     android:background="@color/background_color_grey"
     android:fitsSystemWindows="true">
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:background="@color/colorPrimary"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:theme="@style/menuItemColor"/>
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_order_detail"
         android:layout_below="@+id/toolbar"
         android:layout_width="match_parent"

@@ -1,18 +1,14 @@
 package it.hueic.kenhoang.fgshopapp.adapter;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.squareup.picasso.Callback;
-import com.squareup.picasso.Picasso;
-
 import java.util.List;
 
 import it.hueic.kenhoang.fgshopapp.adapter.viewholder.ImageHolder;
-import it.hueic.kenhoang.fgshopapp.common.Common;
 import it.hueic.kenhoang.fgshopapp.utils.Utils;
 
 public class ImageAdapter extends RecyclerView.Adapter<ImageHolder> {
