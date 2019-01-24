@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
         applicationId "it.hueic.kenhoang.fgshopapp"
         minSdkVersion 16
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -20,33 +20,50 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    final ANDROID_LIBRARY_VERSION = '1.0.0'
+    final GOOGLE_LIBRARY_VERSION = '16.0.0'
+    final FIREBASE_LIBRARY_VERSION = '16.0.6'
     //Android
-    implementation 'com.android.support:appcompat-v7:27.0.2'
-    implementation 'com.android.support:mediarouter-v7:27.0.2'
-    implementation 'com.android.support:animated-vector-drawable:27.0.2'
-    implementation 'com.android.support:cardview-v7:27.0.2'
-    implementation 'com.android.support:recyclerview-v7:27.0.2'
-    implementation 'com.android.support:design:27.0.2'
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation "androidx.appcompat:appcompat:$ANDROID_LIBRARY_VERSION"
+    implementation "androidx.mediarouter:mediarouter:$ANDROID_LIBRARY_VERSION"
+    implementation "androidx.vectordrawable:vectordrawable-animated:$ANDROID_LIBRARY_VERSION"
+    implementation "androidx.cardview:cardview:$ANDROID_LIBRARY_VERSION"
+    implementation "androidx.recyclerview:recyclerview:$ANDROID_LIBRARY_VERSION"
+    implementation "com.google.android.material:material:$ANDROID_LIBRARY_VERSION"
+    implementation "androidx.constraintlayout:constraintlayout:1.1.3"
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation "android.arch.core:runtime:1.1.1"
+    implementation "android.arch.core:common:1.1.1"
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
+    implementation "android.arch.persistence.room:runtime:1.1.1"
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
     //Facebook SDK
-    implementation 'com.facebook.android:facebook-android-sdk:4.31.0'
-    //Google Sdk
-    implementation 'com.google.android.gms:play-services-auth:11.8.0'
+    implementation 'com.facebook.android:facebook-android-sdk:4.39.0'
+    //Google Play Service
+    implementation "com.google.android.gms:play-services:12.0.1"
+    implementation "com.google.android.gms:play-services-places:$GOOGLE_LIBRARY_VERSION"
+    implementation "com.google.android.gms:play-services-location:$GOOGLE_LIBRARY_VERSION"
+    implementation "com.google.android.gms:play-services-maps:$GOOGLE_LIBRARY_VERSION"
+    implementation "com.google.android.gms:play-services-auth:$GOOGLE_LIBRARY_VERSION"
     //GSon
     implementation 'com.google.code.gson:gson:2.8.2'
     //Picasso
-    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.squareup.picasso:picasso:2.71828'
     //Font
     implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
     //Fab Counter
     implementation 'com.github.andremion:counterfab:1.0.1'
+    //MaterialSearchBar
+    implementation 'com.github.mancj:MaterialSearchBar:0.7.5'
+    //Material RadioButton
+    implementation 'com.github.rey5137:material:1.2.4'
     //Material Toast
     implementation 'com.valdesekamdem.library:md-toast:0.9.0'
-    //Slider
-    implementation 'com.nineoldandroids:library:2.4.0'
-    implementation 'com.daimajia.slider:library:1.1.5@aar'
+    // Banner Slider - to display banner
+    implementation 'com.ss.bannerslider:bannerslider:2.0.0'
     //Progress material design
-    implementation 'com.github.d-max:spots-dialog:0.7@aar'
+    implementation 'com.github.d-max:spots-dialog:1.1'
     //Paper
     implementation 'io.paperdb:paperdb:2.6'
     //Circle Image
@@ -60,14 +77,14 @@ dependencies {
     //Sliding up layout
     implementation 'com.sothree.slidinguppanel:library:3.4.0'
     //Retrofit
-    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
     implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
     //TextDrawable
     implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
 
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 }
 apply plugin: 'com.google.gms.google-services'

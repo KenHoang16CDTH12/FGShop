@@ -2,25 +2,22 @@ package it.hueic.kenhoang.fgshopapp.view.favorite;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import it.hueic.kenhoang.fgshopapp.R;
 import it.hueic.kenhoang.fgshopapp.adapter.ProductAdapter;
 import it.hueic.kenhoang.fgshopapp.common.Common;
-import it.hueic.kenhoang.fgshopapp.handle.loadmore.LoadMoreScroll;
 import it.hueic.kenhoang.fgshopapp.object.Product;
 import it.hueic.kenhoang.fgshopapp.presenter.favorite.PresenterLogicFavorite;
-import it.hueic.kenhoang.fgshopapp.presenter.product.PresenterLogicProduct;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 

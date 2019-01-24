@@ -1,9 +1,9 @@
 package it.hueic.kenhoang.fgshopapp.view.detail.detail;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +12,6 @@ import android.widget.TextView;
 import it.hueic.kenhoang.fgshopapp.R;
 import it.hueic.kenhoang.fgshopapp.object.Product;
 import it.hueic.kenhoang.fgshopapp.presenter.detail.commom.PresenterLogicDetailCommom;
-import it.hueic.kenhoang.fgshopapp.presenter.detail.overview.PresenterLogicOverview;
 import it.hueic.kenhoang.fgshopapp.view.detail.commom.IViewDetailCommom;
 
 public class FragmentDetail extends Fragment implements

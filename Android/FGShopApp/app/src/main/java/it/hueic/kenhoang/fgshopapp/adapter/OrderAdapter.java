@@ -2,7 +2,7 @@ package it.hueic.kenhoang.fgshopapp.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +11,6 @@ import java.util.List;
 
 import it.hueic.kenhoang.fgshopapp.adapter.viewholder.OrderHolder;
 import it.hueic.kenhoang.fgshopapp.object.Order;
-import it.hueic.kenhoang.fgshopapp.view.detail.DetailActivity;
 import it.hueic.kenhoang.fgshopapp.view.orderdetail.OrderDetailActivity;
 
 public class OrderAdapter extends RecyclerView.Adapter<OrderHolder> {

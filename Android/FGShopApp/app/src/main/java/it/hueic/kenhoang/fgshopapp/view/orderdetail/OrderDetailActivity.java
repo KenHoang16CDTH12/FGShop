@@ -2,11 +2,11 @@ package it.hueic.kenhoang.fgshopapp.view.orderdetail;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 
 import java.text.DecimalFormat;
@@ -14,13 +14,10 @@ import java.text.NumberFormat;
 import java.util.List;
 
 import it.hueic.kenhoang.fgshopapp.R;
-import it.hueic.kenhoang.fgshopapp.adapter.OrderAdapter;
 import it.hueic.kenhoang.fgshopapp.adapter.OrderDetailAdapter;
 import it.hueic.kenhoang.fgshopapp.common.Common;
 import it.hueic.kenhoang.fgshopapp.object.OrderDetail;
-import it.hueic.kenhoang.fgshopapp.presenter.order.PresenterLogicOrder;
 import it.hueic.kenhoang.fgshopapp.presenter.orderdetail.PresenterLogicOrderDetail;
-import it.hueic.kenhoang.fgshopapp.view.order.OrderActivity;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 

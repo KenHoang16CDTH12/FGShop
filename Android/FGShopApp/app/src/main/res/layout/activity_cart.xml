@@ -9,7 +9,7 @@
     android:fitsSystemWindows="true"
     tools:ignore="MissingPrefix"
     android:background="@color/background_color_grey">
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:background="@color/colorPrimary"
         android:layout_width="match_parent"
@@ -20,13 +20,13 @@
         android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-            <android.support.v4.widget.SwipeRefreshLayout
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
                 android:id="@+id/swipe_layout"
                 android:layout_above="@+id/cvTotal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior">
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recycler_cart"
                     android:scrollbars="vertical"
                     android:background="@android:color/transparent"
@@ -40,8 +40,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:indeterminate="true"/>
-            </android.support.v4.widget.SwipeRefreshLayout>
-            <android.support.v7.widget.CardView
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            <androidx.cardview.widget.CardView
                 android:id="@+id/cvTotal"
                 android:layout_marginBottom="10dp"
                 android:layout_alignParentBottom="true"
@@ -89,6 +89,6 @@
                         android:layout_height="wrap_content"
                         fontPath="fonts/Arkhip_font.ttf"/>
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
     </RelativeLayout>
 </LinearLayout>

@@ -8,13 +8,13 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:ignore="MissingPrefix">
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:background="@color/colorPrimary"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:theme="@style/menuItemColor"/>
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         xmlns:tools="http://schemas.android.com/tools">
@@ -29,7 +29,7 @@
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/inputPhone"
                 android:layout_margin="10dp"
                 android:layout_width="match_parent"
@@ -41,8 +41,8 @@
                     android:inputType="phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
-            </android.support.design.widget.TextInputLayout>
-            <android.support.design.widget.TextInputLayout
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/inputAddress"
                 android:layout_margin="10dp"
                 android:layout_width="match_parent"
@@ -54,7 +54,7 @@
                     android:inputType="phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
          <!--   <TextView
                 android:text="Delivery method: "
                 android:textColor="@android:color/black"
@@ -119,7 +119,7 @@
                     android:layout_height="wrap_content" />
             </RadioGroup>
 -->
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/inputDesc"
                 android:layout_margin="10dp"
                 android:layout_width="match_parent"
@@ -130,7 +130,7 @@
                     android:textColor="@android:color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:id="@+id/btnCheckout"
@@ -144,5 +144,5 @@
                 fontPath="fonts/Arkhip_font.ttf"/>
 
         </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 </LinearLayout>
