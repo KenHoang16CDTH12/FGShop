@@ -22,10 +22,6 @@ import android.view.animation.LayoutAnimationController;
 import android.widget.TextView;
 
 import com.andremion.counterfab.CounterFab;
-import com.daimajia.slider.library.Animations.DescriptionAnimation;
-import com.daimajia.slider.library.SliderLayout;
-import com.daimajia.slider.library.SliderTypes.BaseSliderView;
-import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.squareup.picasso.Picasso;
 import com.valdesekamdem.library.mdtoast.MDToast;
 
@@ -35,13 +31,17 @@ import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
 import io.paperdb.Paper;
 import it.hueic.kenhoang.fgshopapp.R;
+import it.hueic.kenhoang.fgshopapp.adapter.CustomSliderAdapter;
 import it.hueic.kenhoang.fgshopapp.adapter.GroupProductTypeAdapter;
 import it.hueic.kenhoang.fgshopapp.common.Common;
+import it.hueic.kenhoang.fgshopapp.helper.PicassoImageLoadingService;
 import it.hueic.kenhoang.fgshopapp.object.Banner;
 import it.hueic.kenhoang.fgshopapp.object.GroupProductType;
 import it.hueic.kenhoang.fgshopapp.presenter.home.PresenterLogicHome;
 import it.hueic.kenhoang.fgshopapp.utils.Utils;
 import it.hueic.kenhoang.fgshopapp.view.detail.DetailActivity;
+import ss.com.bannerslider.Slider;
+import ss.com.bannerslider.event.OnSlideClickListener;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
@@ -66,7 +66,7 @@ public class HomeActivity extends AppCompatActivity implements
     PresenterLogicHome presenterLogicHome;
     //Slider
     HashMap<String, String> image_list;
-    SliderLayout mSlider;
+    Slider mSlider;
 
     //Need call this function after you init database firebase
     @Override
@@ -87,13 +87,12 @@ public class HomeActivity extends AppCompatActivity implements
         Paper.init(this);
         //Init View
         initView();
-        //Check User != null
-        existUser();
         //Init Presenter
         presenterLogicHome = new PresenterLogicHome(this);
         presenterLogicHome.loadBanners();
         presenterLogicHome.loadGroupProductTypes();
-
+        //Check User != null
+        existUser();
         if (Utils.isLogin()) presenterLogicHome.countCart(this, Common.CURRENT_USER.getId());
         //Event
         fab.setOnClickListener(new View.OnClickListener() {
@@ -122,7 +121,7 @@ public class HomeActivity extends AppCompatActivity implements
     private void existUser() {
         if (Common.CURRENT_USER != null) {
             if (Common.CURRENT_USER.getAvatar() != null && !Common.CURRENT_USER.getAvatar().equals("null")) {
-                Picasso.with(this)
+                Picasso.get()
                         .load(Common.URL + Common.CURRENT_USER.getAvatar())
                         .into(profile_image);
             } else {
@@ -184,6 +183,7 @@ public class HomeActivity extends AppCompatActivity implements
         );
         //Slider
         mSlider = findViewById(R.id.slider);
+        Slider.init(new PicassoImageLoadingService());
     }
 
     @Override
@@ -272,33 +272,17 @@ public class HomeActivity extends AppCompatActivity implements
     }
 
     @Override
-    public void showBanners(List<Banner> banners) {
+    public void showBanners(final List<Banner> banners) {
         image_list = new HashMap<>();
-        for (final Banner banner: banners) {
-            //Create Slider
-            final TextSliderView textSliderView = new TextSliderView(getBaseContext());
-            textSliderView
-                    .description(banner.getName_product())
-                    .image(Common.URL + banner.getImage())
-                    .setScaleType(BaseSliderView.ScaleType.Fit)
-                    .setOnSliderClickListener(new BaseSliderView.OnSliderClickListener() {
-                        @Override
-                        public void onSliderClick(BaseSliderView slider) {
-                            Intent detailIntent = new Intent(HomeActivity.this, DetailActivity.class);
-                            detailIntent.putExtra("id_product", banner.getId_product());
-                            startActivity(detailIntent);
-                        }
-                    });
-            //Add extra bundle
-            textSliderView.bundle(new Bundle());
-            textSliderView.getBundle().putInt("id_product", banner.getId_product()); //handle after
-            mSlider.addSlider(textSliderView);
-        }
-
-        mSlider.setPresetTransformer(SliderLayout.Transformer.Background2Foreground);
-        mSlider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
-        mSlider.setCustomAnimation(new DescriptionAnimation());
-        mSlider.setDuration(5000);
+        mSlider.setAdapter(new CustomSliderAdapter(banners));
+        mSlider.setOnSlideClickListener(new OnSlideClickListener() {
+            @Override
+            public void onSlideClick(int position) {
+                Intent detailIntent = new Intent(HomeActivity.this, DetailActivity.class);
+                detailIntent.putExtra("id_product", banners.get(position).getId_product());
+                startActivity(detailIntent);
+            }
+        });
     }
 
     @Override
@@ -341,12 +325,10 @@ public class HomeActivity extends AppCompatActivity implements
     protected void onResume() {
         super.onResume();
         if (Utils.isLogin()) presenterLogicHome.countCart(this, Common.CURRENT_USER.getId());
-        if (mSlider != null) mSlider.startAutoCycle();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        if (mSlider != null) mSlider.stopAutoCycle();
     }
 }

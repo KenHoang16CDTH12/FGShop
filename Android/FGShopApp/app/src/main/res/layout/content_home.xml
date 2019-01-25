@@ -11,9 +11,11 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <com.daimajia.slider.library.SliderLayout
+        <ss.com.bannerslider.Slider
             android:id="@+id/slider"
             android:layout_margin="10dp"
+            app:slider_interval="10000"
+            app:slider_loopSlides="true"
             android:layout_width="match_parent"
             android:layout_height="200dp"/>
         <androidx.recyclerview.widget.RecyclerView

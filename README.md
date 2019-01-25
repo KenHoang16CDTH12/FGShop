@@ -11,7 +11,7 @@
 
 ## Introduction
 
-[fg-shop](git@github.com:KenHoang16CDTH12/FGShop-OpenSource.git) is a shop online project. It has 2 platforms which are [php](http://php.net/) and [android](https://developer.android.com/studio/). Use model MVP for Android and MVC for Web PHP
+[fg-shop](https://github.com/KenHoang16CDTH12/FGNinjaAdventure-Libgdx.git) is a shop online project. It has 2 platforms which are [php](http://php.net/) and [android](https://developer.android.com/studio/). Use model MVP for Android and MVC for Web PHP
 
 - [Donate](https://www.paypal.me/KenHoangDev)
 
@@ -48,7 +48,7 @@ Understanding and learning this knowledge in advance will greatly help the use o
 ## Demo
 
 <a href="http://www.youtube.com/watch?v=7NAP8fK5jrI" target="_blank"><img src="http://img.youtube.com/vi/7NAP8fK5jrI/0.jpg"
-alt="IMAGE ALT TEXT HERE" width="100%" height="500" border="10" /></a>
+alt="FGShop" width="100%" height="500" border="10" /></a>
 
 ## Features WEB
 

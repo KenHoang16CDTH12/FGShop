@@ -140,7 +140,7 @@ public class FragmentSignIn extends Fragment implements View.OnClickListener,
     }
 
     private void showDialog() {
-        waitingDialog = new SpotsDialog(getActivity());
+        waitingDialog = new SpotsDialog.Builder().setContext(getActivity()).build();
 
         waitingDialog.setCancelable(false);
         waitingDialog.show();
@@ -200,7 +200,8 @@ public class FragmentSignIn extends Fragment implements View.OnClickListener,
 
     @Override
     public void loginFailed(String msg) {
-        waitingDialog.dismiss();
+        if (waitingDialog != null)
+            waitingDialog.dismiss();
         Utils.showToastShort(getActivity(), msg, MDToast.TYPE_ERROR);
     }
 

@@ -137,7 +137,7 @@ public class ProductActivity extends AppCompatActivity implements
     private void existUser() {
         if (Common.CURRENT_USER != null) {
             if (Common.CURRENT_USER.getAvatar() != null && !Common.CURRENT_USER.getAvatar().equals("null")) {
-                Picasso.with(this)
+                Picasso.get()
                         .load(Common.URL + Common.CURRENT_USER.getAvatar())
                         .into(profile_image);
             } else {
