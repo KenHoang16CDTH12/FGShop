@@ -38,18 +38,17 @@ public class ParseHelper {
                     user.setToken(value.getString("token"));
                     user.setRole(value.getString("role"));
 
-                    JSONObject data_user = value.getJSONObject("data");
-                    user.setId(data_user.getInt("id"));
-                    user.setName(data_user.getString("name"));
-                    user.setBirthdate(data_user.getString("birthdate"));
-                    user.setPhone(data_user.getString("phone"));
-                    user.setGender(data_user.getString("gender"));
-                    user.setIdentify_number(data_user.getString("identify_number"));
-                    user.setWallet(data_user.getInt("wallet"));
-                    user.setIs_social(data_user.getString("is_social"));
-                    user.setStatus(data_user.getString("status"));
+                    user.setId(value.getInt("id"));
+                    user.setName(value.getString("name"));
+                    user.setBirthdate(value.getString("birthdate"));
+                    user.setPhone(value.getString("phone"));
+                    user.setGender(value.getString("gender"));
+                    user.setIdentify_number(value.getString("identify_number"));
+                    user.setWallet(value.getInt("wallet"));
+                    user.setIs_social(value.getString("is_social"));
+                    user.setStatus(value.getString("status"));
 
-                    JSONObject image = data_user.getJSONObject("image");
+                    JSONObject image = value.getJSONObject("image");
                     user.setAvatar(image.getString("avatar"));
                     user.setCover(image.getString("cover"));
 

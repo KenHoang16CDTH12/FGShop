@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         app:cardElevation="10dp">
         <LinearLayout
             android:layout_gravity="start|center_vertical"

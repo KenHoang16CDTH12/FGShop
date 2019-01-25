@@ -161,7 +161,7 @@ public class FragmentSignUp extends Fragment implements IViewLogin,
     }
 
     private void showDialog() {
-        waitingDialog = new SpotsDialog(getActivity());
+        waitingDialog = new SpotsDialog.Builder().setContext(getActivity()).build();
 
         waitingDialog.setCancelable(false);
         waitingDialog.show();

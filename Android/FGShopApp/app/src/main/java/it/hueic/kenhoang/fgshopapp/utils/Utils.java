@@ -8,6 +8,9 @@ import android.content.pm.PackageManager;
 import android.content.pm.Signature;
 
 import com.google.android.material.snackbar.Snackbar;
+
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
@@ -16,6 +19,7 @@ import android.widget.ProgressBar;
 
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
 import com.valdesekamdem.library.mdtoast.MDToast;
 
 import java.security.MessageDigest;
@@ -25,6 +29,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 import it.hueic.kenhoang.fgshopapp.common.Common;
+import it.hueic.kenhoang.fgshopapp.helper.ImageViewTarget;
 import it.hueic.kenhoang.fgshopapp.view.cart.CartActivity;
 import it.hueic.kenhoang.fgshopapp.view.favorite.FavoriteActivity;
 import it.hueic.kenhoang.fgshopapp.view.login.LoginActivity;
@@ -48,43 +53,11 @@ public class Utils {
 
     /** Load image with Picasso **/
     public static void loadImage(Context context, String path, final ImageView img, final ProgressBar progressBar) {
-       /* Target target = new Target() {
+        Target target = new ImageViewTarget(img, progressBar);
 
-            @Override
-            public void onPrepareLoad(Drawable arg0) {
-
-                progressBar.setVisibility(View.VISIBLE);
-            }
-
-            @Override
-            public void onBitmapLoaded(Bitmap arg0, Picasso.LoadedFrom arg1) {
-                img.setImageBitmap(arg0);
-                progressBar.setVisibility(View.GONE);
-            }
-
-            @Override
-            public void onBitmapFailed(Drawable arg0) {
-                // TODO Auto-generated method stub
-                progressBar.setVisibility(View.VISIBLE);
-            }
-        };
-
-        Picasso.with(context)
+        Picasso.get()
                 .load(Common.URL + path)
-                .into(target);*/
-        Picasso.with(context)
-                .load(Common.URL + path)
-                .into(img, new Callback() {
-                    @Override
-                    public void onSuccess() {
-                        progressBar.setVisibility(View.GONE);
-                    }
-
-                    @Override
-                    public void onError() {
-
-                    }
-                });
+                .into(target);
     }
 
     /** Show snack bar **/
