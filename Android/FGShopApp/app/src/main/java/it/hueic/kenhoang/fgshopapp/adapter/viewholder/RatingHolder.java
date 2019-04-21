@@ -1,12 +1,12 @@
 package it.hueic.kenhoang.fgshopapp.adapter.viewholder;
 
-import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.RecyclerView;
 import it.hueic.kenhoang.fgshopapp.R;
 
 public class RatingHolder extends RecyclerView.ViewHolder {

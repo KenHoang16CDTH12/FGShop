@@ -3,23 +3,24 @@ package it.hueic.kenhoang.fgshopapp.view.cart;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
-import com.google.android.material.snackbar.Snackbar;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.ItemTouchHelper;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.List;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.ItemTouchHelper;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import it.hueic.kenhoang.fgshopapp.R;
 import it.hueic.kenhoang.fgshopapp.adapter.CartAdapter;
 import it.hueic.kenhoang.fgshopapp.adapter.viewholder.CartHolder;

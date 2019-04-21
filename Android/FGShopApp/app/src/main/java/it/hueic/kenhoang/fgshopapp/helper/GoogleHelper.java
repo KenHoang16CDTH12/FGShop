@@ -3,8 +3,6 @@ package it.hueic.kenhoang.fgshopapp.helper;
 import android.app.Activity;
 import android.content.Context;
 import android.net.Uri;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import android.util.Log;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -15,6 +13,8 @@ import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import it.hueic.kenhoang.fgshopapp.common.Common;
 import it.hueic.kenhoang.fgshopapp.object.User;
 import it.hueic.kenhoang.fgshopapp.presenter.login.PresenterLogicLogin;

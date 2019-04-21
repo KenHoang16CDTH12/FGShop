@@ -2,16 +2,15 @@ package it.hueic.kenhoang.fgshopapp.view.checkout;
 
 import android.content.Context;
 import android.graphics.Color;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import androidx.appcompat.widget.Toolbar;
-
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 import com.valdesekamdem.library.mdtoast.MDToast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import it.hueic.kenhoang.fgshopapp.R;
 import it.hueic.kenhoang.fgshopapp.common.Common;
 import it.hueic.kenhoang.fgshopapp.helper.DatabaseHelper;

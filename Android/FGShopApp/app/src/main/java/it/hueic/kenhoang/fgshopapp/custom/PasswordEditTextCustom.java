@@ -6,17 +6,18 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import com.google.android.material.textfield.TextInputLayout;
-import androidx.core.content.ContextCompat;
 import android.text.InputType;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
 
+import com.google.android.material.textfield.TextInputLayout;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import androidx.core.content.ContextCompat;
 import it.hueic.kenhoang.fgshopapp.R;
 
 /**

@@ -2,17 +2,17 @@ package it.hueic.kenhoang.fgshopapp.view.orderdetail;
 
 import android.content.Context;
 import android.graphics.Color;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.List;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import it.hueic.kenhoang.fgshopapp.R;
 import it.hueic.kenhoang.fgshopapp.adapter.OrderDetailAdapter;
 import it.hueic.kenhoang.fgshopapp.common.Common;

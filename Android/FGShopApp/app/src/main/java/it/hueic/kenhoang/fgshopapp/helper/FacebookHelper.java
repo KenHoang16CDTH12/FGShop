@@ -1,6 +1,5 @@
 package it.hueic.kenhoang.fgshopapp.helper;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -20,7 +19,6 @@ import java.net.URL;
 
 import it.hueic.kenhoang.fgshopapp.object.User;
 import it.hueic.kenhoang.fgshopapp.presenter.login.PresenterLogicLogin;
-import it.hueic.kenhoang.fgshopapp.view.login.IViewLogin;
 
 public class FacebookHelper {
 

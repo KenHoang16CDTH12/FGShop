@@ -1,11 +1,11 @@
 package it.hueic.kenhoang.fgshopapp.adapter.viewholder;
 
-import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.RecyclerView;
 import it.hueic.kenhoang.fgshopapp.R;
 import it.hueic.kenhoang.fgshopapp.handle.click.IClickItemListener;
 

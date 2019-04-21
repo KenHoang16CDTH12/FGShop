@@ -2,11 +2,7 @@ package it.hueic.kenhoang.fgshopapp.view.detail;
 
 import android.content.Context;
 import android.graphics.Color;
-import com.google.android.material.tabs.TabLayout;
-import androidx.viewpager.widget.ViewPager;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,6 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
+import com.google.android.material.tabs.TabLayout;
 import com.stepstone.apprating.AppRatingDialog;
 import com.stepstone.apprating.listener.RatingDialogListener;
 import com.valdesekamdem.library.mdtoast.MDToast;
@@ -23,6 +20,9 @@ import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Calendar;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager.widget.ViewPager;
 import it.hueic.kenhoang.fgshopapp.R;
 import it.hueic.kenhoang.fgshopapp.adapter.ViewPagerAdapterDetail;
 import it.hueic.kenhoang.fgshopapp.common.Common;

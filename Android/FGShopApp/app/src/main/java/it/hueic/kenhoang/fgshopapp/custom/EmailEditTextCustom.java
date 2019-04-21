@@ -5,12 +5,12 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import androidx.core.content.ContextCompat;
 import android.text.InputType;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.EditText;
 
+import androidx.core.content.ContextCompat;
 import it.hueic.kenhoang.fgshopapp.R;
 
 /**

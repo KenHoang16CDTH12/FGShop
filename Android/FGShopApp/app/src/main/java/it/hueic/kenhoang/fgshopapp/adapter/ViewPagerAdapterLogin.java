@@ -3,7 +3,6 @@ package it.hueic.kenhoang.fgshopapp.adapter;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-
 import it.hueic.kenhoang.fgshopapp.common.Common;
 import it.hueic.kenhoang.fgshopapp.view.login.signin.FragmentSignIn;
 import it.hueic.kenhoang.fgshopapp.view.login.signup.FragmentSignUp;
