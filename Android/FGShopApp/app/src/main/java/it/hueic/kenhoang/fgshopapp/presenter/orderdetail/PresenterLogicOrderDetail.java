@@ -1,7 +1,5 @@
 package it.hueic.kenhoang.fgshopapp.presenter.orderdetail;
 
-import java.text.DecimalFormat;
-import java.text.NumberFormat;
 import java.util.List;
 
 import it.hueic.kenhoang.fgshopapp.model.ModelDetail;

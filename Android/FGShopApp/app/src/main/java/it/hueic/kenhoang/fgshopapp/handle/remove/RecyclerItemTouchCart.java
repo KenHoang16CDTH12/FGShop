@@ -1,10 +1,10 @@
 package it.hueic.kenhoang.fgshopapp.handle.remove;
 
 import android.graphics.Canvas;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.ItemTouchHelper;
 import android.view.View;
 
+import androidx.recyclerview.widget.ItemTouchHelper;
+import androidx.recyclerview.widget.RecyclerView;
 import it.hueic.kenhoang.fgshopapp.adapter.viewholder.CartHolder;
 
 public class RecyclerItemTouchCart extends ItemTouchHelper.SimpleCallback{

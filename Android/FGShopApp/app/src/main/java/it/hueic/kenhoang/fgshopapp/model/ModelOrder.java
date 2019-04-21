@@ -10,7 +10,6 @@ import it.hueic.kenhoang.fgshopapp.connect.ConnectAPI;
 import it.hueic.kenhoang.fgshopapp.helper.ParseHelper;
 import it.hueic.kenhoang.fgshopapp.object.Order;
 import it.hueic.kenhoang.fgshopapp.object.OrderDetail;
-import it.hueic.kenhoang.fgshopapp.object.ProductType;
 
 public class ModelOrder {
     /**

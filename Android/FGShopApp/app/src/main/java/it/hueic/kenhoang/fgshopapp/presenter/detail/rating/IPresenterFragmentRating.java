@@ -4,7 +4,6 @@ import android.widget.ProgressBar;
 
 import java.util.List;
 
-import it.hueic.kenhoang.fgshopapp.object.Product;
 import it.hueic.kenhoang.fgshopapp.object.Rate;
 
 public interface IPresenterFragmentRating {

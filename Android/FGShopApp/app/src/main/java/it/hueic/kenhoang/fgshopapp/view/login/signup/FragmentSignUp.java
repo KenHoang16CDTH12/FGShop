@@ -3,9 +3,6 @@ package it.hueic.kenhoang.fgshopapp.view.login.signup;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.annotation.Nullable;
-import com.google.android.material.textfield.TextInputLayout;
-import androidx.fragment.app.Fragment;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.LayoutInflater;
@@ -22,10 +19,13 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputLayout;
 import com.valdesekamdem.library.mdtoast.MDToast;
 
 import java.util.Arrays;
 
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import dmax.dialog.SpotsDialog;
 import io.paperdb.Paper;
 import it.hueic.kenhoang.fgshopapp.R;

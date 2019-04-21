@@ -1,7 +1,6 @@
 package it.hueic.kenhoang.fgshopapp.adapter;
 
 import android.content.Context;
-import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +11,7 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.List;
 
+import androidx.recyclerview.widget.RecyclerView;
 import it.hueic.kenhoang.fgshopapp.adapter.viewholder.CartHolder;
 import it.hueic.kenhoang.fgshopapp.common.Common;
 import it.hueic.kenhoang.fgshopapp.helper.DatabaseHelper;

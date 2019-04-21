@@ -1,7 +1,5 @@
 package it.hueic.kenhoang.fgshopapp.adapter.viewholder;
 
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -11,6 +9,7 @@ import android.widget.TextView;
 
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
 
+import androidx.recyclerview.widget.RecyclerView;
 import it.hueic.kenhoang.fgshopapp.R;
 
 public class CartHolder extends RecyclerView.ViewHolder{

@@ -2,10 +2,10 @@ package it.hueic.kenhoang.fgshopapp.view.splash;
 
 import android.content.Context;
 import android.content.Intent;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.WindowManager;
 
+import androidx.appcompat.app.AppCompatActivity;
 import io.paperdb.Paper;
 import it.hueic.kenhoang.fgshopapp.R;
 import it.hueic.kenhoang.fgshopapp.common.Common;

@@ -6,18 +6,13 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
-
-import com.google.android.material.snackbar.Snackbar;
-
-import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
-import com.squareup.picasso.Callback;
+import com.google.android.material.snackbar.Snackbar;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
 import com.valdesekamdem.library.mdtoast.MDToast;

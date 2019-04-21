@@ -19,8 +19,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import it.hueic.kenhoang.fgshopapp.common.Common;
-
 public class ConnectAPI extends AsyncTask<String, Void, ArrayList<String>> {
     String url;
     List<HashMap<String,String>> attrs;
